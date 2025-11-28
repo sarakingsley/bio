@@ -1,13 +1,19 @@
 project:
   type: website
 
+render:
+    - "*.qmd"
+    - "*.md"
+    - "!etc/"
+
 website:
-  title: "sara-academic-website-f25"
+  title: "Sara Kingsley"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
 
 format:
   html:

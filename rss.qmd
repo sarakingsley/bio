@@ -1,0 +1,15 @@
+---
+title: "Sara Kingsley's blog"
+search: false
+listing:
+  sort: "date desc"
+  feed: 
+    title: "Sara Kingsley's blog"
+    description: "Sara Kingsley's blog"
+    items: 60
+    type: partial
+    language: en
+  contents:
+    - "blog/**/index.qmd"
+    - "!blog/index.qmd"
+---
