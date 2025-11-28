@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -68,7 +70,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -114,10 +174,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./videolessons/index.qmd"> 
-<span class="menu-text">Video Lessons</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./aiengineering/index.qmd"> 
 <span class="menu-text">AI Engineering Tutorials</span></a>
   </li>  
@@ -126,34 +182,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Datasets</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./now/index.qmd"> 
-<span class="menu-text">Now</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./tools/index.qmd"> 
-<span class="menu-text">Tools</span></a>
+<span class="menu-text">Useful Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./aidisclosures/index.qmd"> 
 <span class="menu-text">AI Disclosure Templates</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./atom.xml"> 
-<span class="menu-text">{{&lt; iconify bi rss size=1.1em title='RSS' &gt;}}</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="mailto:sara@redteamai.org"> 
-<span class="menu-text">{{&lt; iconify bi envelope size=1.1em title='E-mail' &gt;}}</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://github.com/sarakingsley" rel="me"> 
-<span class="menu-text">{{&lt; iconify bi github size=1.1em title='GitHub' &gt;}}</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://www.linkedin.com/in/sara-kingsley" rel="me"> 
-<span class="menu-text">{{&lt; iconify bi linkedin size=1.1em title='LinkedIn' &gt;}}</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -168,65 +202,37 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Sara Kingsley’s blog</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 
 
-<p>project: type: website</p>
-<p>render: - “<em>.qmd” - ”</em>.md” - “!etc/”</p>
-<p>resources: - “files/<strong>” - ”etc/</strong>”</p>
-<p>freeze: true</p>
-<section id="metadata-stuff" class="level1">
-<h1>Metadata stuff</h1>
-<p>pagetitle: “Sara C. Kingsley” author-meta: “Sara C. Kingsley”</p>
-<p>website: title: “Sara Kingsley” description: “Sara C. Kingsley is a teaching faculty and researcher at Carnegie Mellon University, researching AI Security &amp; Safety, and teaching applied Generative AI methods and engineering and data science.” favicon: “/files/favicon-512.png” site-url: “https://github.com/sarakingsley/sara.kingsley” repo-url: “https://github.com/sarakingsley/sara.kingsley”</p>
-<p>navbar: pinned: true</p>
-<pre><code>left:
-  - text: "About"
-    href: "index.qmd"
-  - text: "CV"
-    href: "cv/index.qmd"
-  - text: "Blog"
-    file: blog/index.qmd
-  - text: "Research"
-    file: research/index.qmd
-  - text: "Teaching"
-    href: "teaching/index.qmd"
-  - text: "Talks"
-    href: "talks/index.qmd"
-  - text: "Video Lessons"
-    href: "videolessons/index.qmd"
-  - text: "AI Engineering Tutorials"
-    href: "aiengineering/index.qmd"
-  - text: "Datasets"
-    href: "datasets/index.qmd"
-  - text: "Now"
-    href: now/index.qmd
-  - text: "Tools"
-    file: tools/index.qmd
-  - text: "AI Disclosure Templates"
-    file: aidisclosures/index.qmd
-
-right:
-  - text: "{{&lt; iconify bi rss size=1.1em title='RSS' &gt;}}"
-    href: atom.xml
-  - text: "{{&lt; iconify bi envelope size=1.1em title='E-mail' &gt;}}"
-    href: "mailto:sara@redteamai.org"
-  - text: "{{&lt; iconify bi github size=1.1em title='GitHub' &gt;}}"
-    href: https://github.com/sarakingsley
-    rel: me
-  - text: "{{&lt; iconify bi linkedin size=1.1em title='LinkedIn' &gt;}}"
-    href: https://www.linkedin.com/in/sara-kingsley
-    rel: me</code></pre>
-<p>page-footer: left: | <span class="faux-block">{{&lt; fa brands creative-commons &gt;}} <strong>?var:years</strong> Sara C. Kingsley. Design derived from an Andrew Weiss Quarto website</span> <span class="faux-block">All content licensed under<br><a href="https://creativecommons.org/licenses/by/4.0/">{{&lt; fa brands creative-commons &gt;}} {{&lt; fa brands creative-commons-by &gt;}} Creative Commons CC BY 4.0</a></span><br>
-center: | <span class="faux-block">{{&lt; fa brands orcid &gt;}} <strong>ORCID</strong> <a href="https://orcid.org/?var:orcid"><strong>?var:orcid</strong></a></span> <!-- <span class="faux-block">{{< fa key >}} [PGP public key](?var:pgp.key) &emsp; {{< fa fingerprint >}} Fingerprint:</strong><br><span class="fingerprint">?var:pgp.fingerprint</span></span> --> right: | <span class="faux-block">Made with {{&lt; fa brands r-project &gt;}} and <a href="https://quarto.org/">Quarto</a></span> <span class="faux-block"><a href="?var:github-url">View the source at {{&lt; fa brands github &gt;}} GitHub</a></span></p>
-<p>format: html: theme: - html/ath.scss grid: body-width: 900px toc: false code-link: true anchor-sections: true fig-cap-location: margin reference-location: margin footnotes-hover: true highlight-style: monokai</p>
 
 
-</section>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
 
-</main> <!-- /main -->
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

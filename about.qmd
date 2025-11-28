@@ -12,9 +12,6 @@ project:
 
 freeze: true
 
-bibliography: files/bib/references.bib
-csl: files/bib/chicago-author-date.csl
-
 # Metadata stuff
 pagetitle: "Sara C. Kingsley"
 author-meta: "Sara C. Kingsley"

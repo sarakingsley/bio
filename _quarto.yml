@@ -1,27 +1,71 @@
 project:
   type: website
 
-render:
-    - "*.qmd"
-    - "*.md"
-    - "!etc/"
+  preview: 
+      browser: true
+      watch-inputs: true
+      navigate: true
+
+  render:
+      - "*.qmd"
+      - "*.md"
+      - "!etc/"
+
+  resources:
+    - "files/**"
+
+
+freeze: false
+
+pagetitle: "Sara Kingsley"
+author-meta: "Sara Kingsley"
 
 website:
   title: "Sara Kingsley"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
+    pinned: true
 
+    left:
+      - text: "About"
+        href: "index.qmd"
+      - text: "CV"
+        href: "cv/index.qmd"
+      - text: "Blog"
+        file: blog/index.qmd
+      - text: "Research"
+        file: research/index.qmd
+      - text: "Teaching"
+        href: "teaching/index.qmd"
+      - text: "Talks"
+        href: "talks/index.qmd"
+      #- text: "Video Lessons"
+        #href: "videolessons/index.qmd"
+      - text: "AI Engineering Tutorials"
+        href: "aiengineering/index.qmd"
+      - text: "Research Datasets"
+        href: "datasets/index.qmd"
+      - text: "Useful Tools"
+        file: tools/index.qmd
+      - text: "AI Disclosure Templates"
+        file: aidisclosures/index.qmd
+    
+  
 format:
   html:
-    theme:
+    theme: 
       - cosmo
-      - brand
-    css: styles.css
-    toc: true
+      #- html/sarakingsley.scss
+    grid: 
+      body-width: 900px
+    toc: false
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai
+
+
 
 
 
