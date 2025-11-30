@@ -1,0 +1,46 @@
+---
+title: "Research Papers"
+listing:
+  - id: articles
+    contents: "peer-reviewed-papers/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+    categories: true
+  - id: working-papers
+    contents: "working-papers/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+    categories: true
+  - id: white-policy-papers
+    contents: "white-policy-papers/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+    categories: true
+page-layout: full
+include-back-link: false
+toc-location: right
+---
+
+My peer-reviewed conference, journal and workshop papers are listed on this page. 
+In addition, this page provides links to my working, white paper and policy papers. 
+
+
+## Peer-reviewed Journal, Conference and Workshop articles
+
+:::{#articles}
+:::
+
+
+## Working papers
+
+:::{#working-papers}
+:::
+
+## White Papers and Policy papers
+
+:::{#white-policy-papers}
+:::
+
+
+
+

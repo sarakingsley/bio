@@ -28,16 +28,26 @@ format:
   <div class="g-col-1 g-col-sm-0"></div>
 </div>
 ```
+>
+> *“Trust means belief in the reliability or truth of a person or thing.
+> Associated with comfort, security, and confidence, its absence infers doubt about the
+> reliability or truthfulness of a person or thing.”*
+>
+> – Cynthia Dwork & Martha Minow
+
+> Pursue endeavors that fuel hope in the future society. 
 
 :::
 
 ::: {.g-col-12 .g-col-sm-8}
 
+
+
 I'm a teaching faculty and AI Safety Researcher in the [Heinz College of Information Systems and Public Policy](https://www.heinz.cmu.edu//) at [Carnegie Mellon University](https://www.cmu.edu). I received a PhD in computer science / human-computer interaction (HCI) from Carnegie Mellon University's [School of Computer Science](https://www.cs.cmu.edu/) in August 2025.
 
-In my research, I investigate and develop novel methodologies for identifying and measuring [AI Security and Safety vulnerabilities, policy compliance and risks](https://www.ingoresearch.org/amicable-contempt/), focusing on national and economic security risks. My research on AI Security & Safety focuses on AI red teaming; building tools and systems for AI Cyber Threat Intelligence and investigating AI Labor Market Fraud and Scams. Toward these focuses, I am an avid applied AI engineer, and seek to advance LLM and Agentic AI engineering practices through my empirical research.
+In my research, I investigate and develop novel methodologies for identifying and measuring **AI Security and Safety vulnerabilities, policy compliance and risks**, focusing on national and economic security. My research on AI Security & Safety focuses on AI red teaming; building tools and systems for AI Cyber Threat Intelligence and investigating AI Labor Market Fraud and Scams. Toward these focuses, I am an avid applied AI engineer, and seek to advance LLM and Agentic AI engineering practices through my empirical research.
 
-Currently, I teach courses on [Applied Generative AI](https://evalf22.classes.andrewheiss.com/) and supervise student research on Agentic AI for AI Security Evaluations. Previously, I have taught courses on data science and user-centered research & evaluation methods. In the future, I hope to teach courses on [AI Security and AI Safety Evaluation Method](https://datavizs22.classes.andrewheiss.com/), [LLM and Agentic AI Engineering](https://datavizs22.classes.andrewheiss.com/) and [AI Labor Markets: Empirical Research and Policy ('AI Future of Work')](https://datavizs22.classes.andrewheiss.com/). 
+Currently, I teach courses on **Applied Generative AI** and supervise student research on Agentic AI for AI Security Evaluations. Previously, I have taught courses on data science and user-centered research & evaluation methods. In the future, I hope to teach courses on **AI Security and AI Safety Evaluation Methods**, **LLM and Agentic AI Engineering** and **AI Labor Markets: Empirical Research and Policy ('AI Future of Work')**. 
 
 I love teaching LLM, Agentic AI and RAG engineering using Python frameworks like Pytorch, Pydantic, uv, Milvus, faiss, Hydra, OmegaConf, Flask and SQLite3. 
 

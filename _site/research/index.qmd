@@ -1,0 +1,43 @@
+---
+title: "Research"
+listing:
+  - id: articles
+    contents: "articles/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+    categories: true
+  - id: working-papers
+    contents: "working-papers/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+  - id: white-policy-papers
+    contents: "white-policy-papers/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+page-layout: full
+include-back-link: false
+toc-location: right
+---
+
+INSERT DESCRIPTION OF RESEARCH.
+
+
+## (Select) Peer-reviewed Journal, Conference and Workshop articles
+
+:::{#articles}
+:::
+
+
+## Working papers
+
+:::{#working-papers}
+:::
+
+## White Papers and Policy papers
+
+:::{#white-policy-papers}
+:::
+
+
+
+

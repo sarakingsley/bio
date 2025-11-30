@@ -2,5 +2,11 @@
   {
     "listing": "/rss.html",
     "items": []
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/peer-reviewed-papers/hcomp-2024/index.html"
+    ]
   }
 ]

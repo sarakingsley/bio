@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Sara Kingsley",
     "section": "",
-    "text": "I’m a teaching faculty and AI Safety Researcher in the Heinz College of Information Systems and Public Policy at Carnegie Mellon University. I received a PhD in computer science / human-computer interaction (HCI) from Carnegie Mellon University’s School of Computer Science in August 2025.\nIn my research, I investigate and develop novel methodologies for identifying and measuring AI Security and Safety vulnerabilities, policy compliance and risks, focusing on national and economic security risks. My research on AI Security & Safety focuses on AI red teaming; building tools and systems for AI Cyber Threat Intelligence and investigating AI Labor Market Fraud and Scams. Toward these focuses, I am an avid applied AI engineer, and seek to advance LLM and Agentic AI engineering practices through my empirical research.\nCurrently, I teach courses on Applied Generative AI and supervise student research on Agentic AI for AI Security Evaluations. Previously, I have taught courses on data science and user-centered research & evaluation methods. In the future, I hope to teach courses on AI Security and AI Safety Evaluation Method, LLM and Agentic AI Engineering and AI Labor Markets: Empirical Research and Policy (‘AI Future of Work’).\nI love teaching LLM, Agentic AI and RAG engineering using Python frameworks like Pytorch, Pydantic, uv, Milvus, faiss, Hydra, OmegaConf, Flask and SQLite3.\nPlease feel free to contact me about research or learning interests."
+    "text": "“Trust means belief in the reliability or truth of a person or thing. Associated with comfort, security, and confidence, its absence infers doubt about the reliability or truthfulness of a person or thing.”\n– Cynthia Dwork & Martha Minow\n\n\nPursue endeavors that fuel hope in the future society.\n\n\n\nI’m a teaching faculty and AI Safety Researcher in the Heinz College of Information Systems and Public Policy at Carnegie Mellon University. I received a PhD in computer science / human-computer interaction (HCI) from Carnegie Mellon University’s School of Computer Science in August 2025.\nIn my research, I investigate and develop novel methodologies for identifying and measuring AI Security and Safety vulnerabilities, policy compliance and risks, focusing on national and economic security. My research on AI Security & Safety focuses on AI red teaming; building tools and systems for AI Cyber Threat Intelligence and investigating AI Labor Market Fraud and Scams. Toward these focuses, I am an avid applied AI engineer, and seek to advance LLM and Agentic AI engineering practices through my empirical research.\nCurrently, I teach courses on Applied Generative AI and supervise student research on Agentic AI for AI Security Evaluations. Previously, I have taught courses on data science and user-centered research & evaluation methods. In the future, I hope to teach courses on AI Security and AI Safety Evaluation Methods, LLM and Agentic AI Engineering and AI Labor Markets: Empirical Research and Policy (‘AI Future of Work’).\nI love teaching LLM, Agentic AI and RAG engineering using Python frameworks like Pytorch, Pydantic, uv, Milvus, faiss, Hydra, OmegaConf, Flask and SQLite3.\nPlease feel free to contact me about research or learning interests."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,75 @@
     "title": "Metadata stuff",
     "section": "",
     "text": "project: type: website\nrender: - “.qmd” - ”.md” - “!etc/”\nresources: - “files/” - ”etc/”\nfreeze: true\n\nMetadata stuff\npagetitle: “Sara C. Kingsley” author-meta: “Sara C. Kingsley”\nwebsite: title: “Sara Kingsley” description: “Sara C. Kingsley is a teaching faculty and researcher at Carnegie Mellon University, researching AI Security & Safety, and teaching applied Generative AI methods and engineering and data science.” favicon: “/files/favicon-512.png” site-url: “https://github.com/sarakingsley/sara.kingsley” repo-url: “https://github.com/sarakingsley/sara.kingsley”\nnavbar: pinned: true\nleft:\n  - text: \"About\"\n    href: \"index.qmd\"\n  - text: \"CV\"\n    href: \"cv/index.qmd\"\n  - text: \"Blog\"\n    file: blog/index.qmd\n  - text: \"Research\"\n    file: research/index.qmd\n  - text: \"Teaching\"\n    href: \"teaching/index.qmd\"\n  - text: \"Talks\"\n    href: \"talks/index.qmd\"\n  - text: \"Video Lessons\"\n    href: \"videolessons/index.qmd\"\n  - text: \"AI Engineering Tutorials\"\n    href: \"aiengineering/index.qmd\"\n  - text: \"Datasets\"\n    href: \"datasets/index.qmd\"\n  - text: \"Now\"\n    href: now/index.qmd\n  - text: \"Tools\"\n    file: tools/index.qmd\n  - text: \"AI Disclosure Templates\"\n    file: aidisclosures/index.qmd\n\nright:\n  - text: \"{{&lt; iconify bi rss size=1.1em title='RSS' &gt;}}\"\n    href: atom.xml\n  - text: \"{{&lt; iconify bi envelope size=1.1em title='E-mail' &gt;}}\"\n    href: \"mailto:sara@redteamai.org\"\n  - text: \"{{&lt; iconify bi github size=1.1em title='GitHub' &gt;}}\"\n    href: https://github.com/sarakingsley\n    rel: me\n  - text: \"{{&lt; iconify bi linkedin size=1.1em title='LinkedIn' &gt;}}\"\n    href: https://www.linkedin.com/in/sara-kingsley\n    rel: me\npage-footer: left: | {{&lt; fa brands creative-commons &gt;}} ?var:years Sara C. Kingsley. Design derived from an Andrew Weiss Quarto website All content licensed under{{&lt; fa brands creative-commons &gt;}} {{&lt; fa brands creative-commons-by &gt;}} Creative Commons CC BY 4.0\ncenter: | {{&lt; fa brands orcid &gt;}} ORCID ?var:orcid  right: | Made with {{&lt; fa brands r-project &gt;}} and Quarto View the source at {{&lt; fa brands github &gt;}} GitHub\nformat: html: theme: - html/ath.scss grid: body-width: 900px toc: false code-link: true anchor-sections: true fig-cap-location: margin reference-location: margin footnotes-hover: true highlight-style: monokai"
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research Papers",
+    "section": "",
+    "text": "My peer-reviewed conference, journal and workshop papers are listed on this page. In addition, this page provides links to my working, white paper and policy papers."
+  },
+  {
+    "objectID": "research/index.html#select-peer-reviewed-journal-conference-and-workshop-articles",
+    "href": "research/index.html#select-peer-reviewed-journal-conference-and-workshop-articles",
+    "title": "Research",
+    "section": "(Select) Peer-reviewed Journal, Conference and Workshop articles",
+    "text": "(Select) Peer-reviewed Journal, Conference and Workshop articles\n\n\n\n    \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/index.html#working-papers",
+    "href": "research/index.html#working-papers",
+    "title": "Research Papers",
+    "section": "Working papers",
+    "text": "Working papers\n\n\n\n    \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/index.html#white-papers-and-policy-papers",
+    "href": "research/index.html#white-papers-and-policy-papers",
+    "title": "Research Papers",
+    "section": "White Papers and Policy papers",
+    "text": "White Papers and Policy papers\n\n\n\n    \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/index.html#peer-reviewed-journal-conference-and-workshop-articles",
+    "href": "research/index.html#peer-reviewed-journal-conference-and-workshop-articles",
+    "title": "Research Papers",
+    "section": "Peer-reviewed Journal, Conference and Workshop articles",
+    "text": "Peer-reviewed Journal, Conference and Workshop articles\n\n\n\n    \n        \n            \n                Vincent Arel-Bundock, Noah Greifer, and Andrew Heiss, “How to Interpret Statistical Models Using {marginaleffects} in R and Python,” Journal of Statistical Software forthcoming (2024), doi: 10.18637/jss.v111.i09\n            \n\n            \n            \n                \n                    \n                            regression\n                        \n                    \n                    \n                            marginal effect\n                        \n                    \n                    \n                            slope\n                        \n                    \n                    \n                            prediction\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                \n            \n        \n        \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/peer-reviewed-papers/hcomp-2024/index.html",
+    "href": "research/peer-reviewed-papers/hcomp-2024/index.html",
+    "title": "How to Interpret Statistical Models Using {marginaleffects} in R and Python",
+    "section": "",
+    "text": "@article{Arel-BundockGreiferHeiss:2024,\n    title = {How to Interpret Statistical Models Using {marginaleffects} in {R} and {Python}},\n    author = {Vincent Arel-Bundock and Noah Greifer and Andrew Heiss},\n    doi = {10.18637/jss.v111.i09},\n    journal = {Journal of Statistical Software},\n    year = {2024},\n    volume = {111},\n    number = {9},\n    pages = {1–32}}"
+  },
+  {
+    "objectID": "research/peer-reviewed-papers/hcomp-2024/index.html#important-links",
+    "href": "research/peer-reviewed-papers/hcomp-2024/index.html#important-links",
+    "title": "How to Interpret Statistical Models Using {marginaleffects} in R and Python",
+    "section": "",
+    "text": "Paper (preprint)\nGitHub repository"
+  },
+  {
+    "objectID": "research/peer-reviewed-papers/hcomp-2024/index.html#abstract",
+    "href": "research/peer-reviewed-papers/hcomp-2024/index.html#abstract",
+    "title": "How to Interpret Statistical Models Using {marginaleffects} in R and Python",
+    "section": "Abstract",
+    "text": "Abstract\nThe parameters of a statistical model can sometimes be difficult to interpret substantively, especially when that model includes non-linear components, interactions, or transformations. Analysts who fit such complex models often seek to transform raw parameter estimates into quantities that are easier for domain experts and stakeholders to understand. This article presents a simple conceptual framework to describe a vast array of such quantities of interest, which are reported under imprecise and inconsistent terminology across disciplines: predictions, marginal predictions, marginal means, marginal effects, conditional effects, slopes, contrasts, risk ratios, etc. We introduce {marginaleffects}, a package for R and Python which offers a simple and powerful interface to compute all of those quantities, and to conduct (non-)linear hypothesis and equivalence tests on them. {marginaleffects} is lightweight; extensible; it works well in combination with other R and Python packages; and it supports over 100 classes of models, including Linear, Generalized Linear, Generalized Additive, Mixed Effects, Bayesian, and several machine learning models."
+  },
+  {
+    "objectID": "research/peer-reviewed-papers/hcomp-2024/index.html#important-figures",
+    "href": "research/peer-reviewed-papers/hcomp-2024/index.html#important-figures",
+    "title": "How to Interpret Statistical Models Using {marginaleffects} in R and Python",
+    "section": "Important figures",
+    "text": "Important figures\n\n\n\nFigure 2: Predicted probability of impartiality by levels of equality and democracy\n\n\n\n\n\nFigure 4: Tangents to the prediction function at 25 and 50"
+  },
+  {
+    "objectID": "research/peer-reviewed-papers/hcomp-2024/index.html#citation",
+    "href": "research/peer-reviewed-papers/hcomp-2024/index.html#citation",
+    "title": "How to Interpret Statistical Models Using {marginaleffects} in R and Python",
+    "section": "Citation",
+    "text": "Citation\n\n{{&lt; ai zotero &gt;}} Add to Zotero {{&lt; fa square-arrow-up-right &gt;}}\n\n@article{Arel-BundockGreiferHeiss:2024,\n    title = {How to Interpret Statistical Models Using {marginaleffects} in {R} and {Python}},\n    author = {Vincent Arel-Bundock and Noah Greifer and Andrew Heiss},\n    doi = {10.18637/jss.v111.i09},\n    journal = {Journal of Statistical Software},\n    year = {2024},\n    volume = {111},\n    number = {9},\n    pages = {1–32}}"
   }
 ]

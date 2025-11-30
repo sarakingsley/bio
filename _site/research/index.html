@@ -24,23 +24,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1b3db88def35042d172274863c1cdcf0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bc983a94305ec51f774001bb6e4b7482.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-1b3db88def35042d172274863c1cdcf0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-bc983a94305ec51f774001bb6e4b7482.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,18 +70,132 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-articles .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-freeze','listing-pagetitle','listing-author-meta','listing-website','listing-format','listing-language','listing-date-format','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-p','listing-The parameters of a statistical model can sometimes be difficult to interpret substantively, especially when that model includes non-linear components, interactions, or transformations. Analysts who fit such complex models often seek to transform raw parameter estimates into quantities that are easier for domain experts and stakeholders to understand. This article presents a simple conceptual framework to describe a vast array of such quantities of interest, which are reported under imprecise and inconsistent terminology across disciplines','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-freeze","listing-pagetitle","listing-author-meta","listing-website","listing-format","listing-language","listing-date-format","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-p","listing-The parameters of a statistical model can sometimes be difficult to interpret substantively, especially when that model includes non-linear components, interactions, or transformations. Analysts who fit such complex models often seek to transform raw parameter estimates into quantities that are easier for domain experts and stakeholders to understand. This article presents a simple conceptual framework to describe a vast array of such quantities of interest, which are reported under imprecise and inconsistent terminology across disciplines","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-articles'] = new List('listing-articles', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-working-papers .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-working-papers'] = new List('listing-working-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-white-policy-papers .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-white-policy-papers'] = new List('listing-white-policy-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Sara Kingsley</span>
     </a>
   </div>
@@ -90,23 +206,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv/index.qmd"> 
+    <a class="nav-link" href="../cv/index.qmd"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research/index.html"> 
+    <a class="nav-link active" href="../research/index.html" aria-current="page"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching/index.qmd"> 
+    <a class="nav-link" href="../teaching/index.qmd"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talks/index.qmd"> 
+    <a class="nav-link" href="../talks/index.qmd"> 
 <span class="menu-text">Talks</span></a>
   </li>  
 </ul>
@@ -117,65 +233,124 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#peer-reviewed-journal-conference-and-workshop-articles" id="toc-peer-reviewed-journal-conference-and-workshop-articles" class="nav-link active" data-scroll-target="#peer-reviewed-journal-conference-and-workshop-articles">Peer-reviewed Journal, Conference and Workshop articles</a></li>
+  <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">Working papers</a></li>
+  <li><a href="#white-papers-and-policy-papers" id="toc-white-papers-and-policy-papers" class="nav-link" data-scroll-target="#white-papers-and-policy-papers">White Papers and Policy papers</a></li>
+  </ul>
+</nav>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWFyZ2luYWwlMjBlZmZlY3Q=">marginal effect <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJlZGljdGlvbg==">prediction <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmVncmVzc2lvbg==">regression <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2xvcGU=">slope <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content page-columns page-full column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block research default page-columns page-full">
+    <div class="quarto-title-banner page-columns page-full">
+                <div class="quarto-title column-page-left">
+            <h1 class="title">Research Papers</h1>
+
+            
+            
+            
+                    </div>
+    </div>
+    
+    
+    
+    <div class="quarto-title-meta column-page-left">
+
+        
+      
+        
+      </div>
+      
+
+    
+</header>
 
 
+<p>My peer-reviewed conference, journal and workshop papers are listed on this page. In addition, this page provides links to my working, white paper and policy papers.</p>
+<section id="peer-reviewed-journal-conference-and-workshop-articles" class="level2">
+<h2 class="anchored" data-anchor-id="peer-reviewed-journal-conference-and-workshop-articles">Peer-reviewed Journal, Conference and Workshop articles</h2>
+<div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
+<div class="research project-list">
+<ul class="list">
+    
+        <li class="project" data-index="0" data-categories="cmVncmVzc2lvbiUyQ21hcmdpbmFsJTIwZWZmZWN0JTJDc2xvcGUlMkNwcmVkaWN0aW9u" data-listing-date-sort="1727755200000" data-listing-file-modified-sort="1764464349721" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+            <div class="project-content listing-pub-info">
+                <p><a href="https://arelbundock.com/">Vincent Arel-Bundock</a>, <a href="https://ngreifer.github.io/">Noah Greifer</a>, and <strong>Andrew Heiss</strong>, “How to Interpret Statistical Models Using {marginaleffects} in R and Python,” <em>Journal of Statistical Software</em> forthcoming (2024), doi: <a href="https://doi.org/10.18637/jss.v111.i09"><code>10.18637/jss.v111.i09</code></a></p>
+            </div>
 
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=regression">
+                            regression
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=marginal effect">
+                            marginal effect
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=slope">
+                            slope
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=prediction">
+                            prediction
+                        </a></div>
+                    
+            </div>
+            
 
-<p>project: type: website</p>
-<p>render: - “<em>.qmd” - ”</em>.md” - “!etc/”</p>
-<p>resources: - “files/<strong>” - ”etc/</strong>”</p>
-<p>freeze: true</p>
-<section id="metadata-stuff" class="level1">
-<h1>Metadata stuff</h1>
-<p>pagetitle: “Sara C. Kingsley” author-meta: “Sara C. Kingsley”</p>
-<p>website: title: “Sara Kingsley” description: “Sara C. Kingsley is a teaching faculty and researcher at Carnegie Mellon University, researching AI Security &amp; Safety, and teaching applied Generative AI methods and engineering and data science.” favicon: “/files/favicon-512.png” site-url: “https://github.com/sarakingsley/sara.kingsley” repo-url: “https://github.com/sarakingsley/sara.kingsley”</p>
-<p>navbar: pinned: true</p>
-<pre><code>left:
-  - text: "About"
-    href: "index.qmd"
-  - text: "CV"
-    href: "cv/index.qmd"
-  - text: "Blog"
-    file: blog/index.qmd
-  - text: "Research"
-    file: research/index.qmd
-  - text: "Teaching"
-    href: "teaching/index.qmd"
-  - text: "Talks"
-    href: "talks/index.qmd"
-  - text: "Video Lessons"
-    href: "videolessons/index.qmd"
-  - text: "AI Engineering Tutorials"
-    href: "aiengineering/index.qmd"
-  - text: "Datasets"
-    href: "datasets/index.qmd"
-  - text: "Now"
-    href: now/index.qmd
-  - text: "Tools"
-    file: tools/index.qmd
-  - text: "AI Disclosure Templates"
-    file: aidisclosures/index.qmd
+            
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/peer-reviewed-papers/hcomp-2024/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+</ul>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="working-papers" class="level2">
+<h2 class="anchored" data-anchor-id="working-papers">Working papers</h2>
+<div id="listing-working-papers" class="quarto-listing quarto-listing-container-custom">
+<div class="research project-list">
+<ul class="list">
+    
+</ul>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="white-papers-and-policy-papers" class="level2">
+<h2 class="anchored" data-anchor-id="white-papers-and-policy-papers">White Papers and Policy papers</h2>
+<div id="listing-white-policy-papers" class="quarto-listing quarto-listing-container-custom">
+<div class="research project-list">
+<ul class="list">
+    
+</ul>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 
-right:
-  - text: "{{&lt; iconify bi rss size=1.1em title='RSS' &gt;}}"
-    href: atom.xml
-  - text: "{{&lt; iconify bi envelope size=1.1em title='E-mail' &gt;}}"
-    href: "mailto:sara@redteamai.org"
-  - text: "{{&lt; iconify bi github size=1.1em title='GitHub' &gt;}}"
-    href: https://github.com/sarakingsley
-    rel: me
-  - text: "{{&lt; iconify bi linkedin size=1.1em title='LinkedIn' &gt;}}"
-    href: https://www.linkedin.com/in/sara-kingsley
-    rel: me</code></pre>
-<p>page-footer: left: | <span class="faux-block">{{&lt; fa brands creative-commons &gt;}} <strong>?var:years</strong> Sara C. Kingsley. Design derived from an Andrew Weiss Quarto website</span> <span class="faux-block">All content licensed under<br><a href="https://creativecommons.org/licenses/by/4.0/">{{&lt; fa brands creative-commons &gt;}} {{&lt; fa brands creative-commons-by &gt;}} Creative Commons CC BY 4.0</a></span><br>
-center: | <span class="faux-block">{{&lt; fa brands orcid &gt;}} <strong>ORCID</strong> <a href="https://orcid.org/?var:orcid"><strong>?var:orcid</strong></a></span> <!-- <span class="faux-block">{{< fa key >}} [PGP public key](?var:pgp.key) &emsp; {{< fa fingerprint >}} Fingerprint:</strong><br><span class="fingerprint">?var:pgp.fingerprint</span></span> --> right: | <span class="faux-block">Made with {{&lt; fa brands r-project &gt;}} and <a href="https://quarto.org/">Quarto</a></span> <span class="faux-block"><a href="?var:github-url">View the source at {{&lt; fa brands github &gt;}} GitHub</a></span></p>
-<p>format: html: theme: - html/ath.scss grid: body-width: 900px toc: false code-link: true anchor-sections: true fig-cap-location: margin reference-location: margin footnotes-hover: true highlight-style: monokai</p>
 
 
 </section>
